@@ -116,6 +116,11 @@ VSCode allows extensions to provide own CSS styling to the Markdown preview. It 
 
 For example, if you are using inline math formulas, you will probably need to enable the `vscode.markdown-math/notebook-out/katex.min.css` style.
 
+### Statistics
+
+This was added in v0.13.1. Running the `Recall: Show card statistics` will open a new JSON document showing the number of cards in each file, their statuses and
+whether or not they are due for review. This can help investigate issues with cards not showing up for review and is primarily intended for troubleshooting.
+
 ### Import from Mochi <a href="#import-from-mochi" id="import-from-mochi"></a>
 
 To import export files from Mochi, you can run the Recall: Convert Mochi archive command, select a .mochi archive and for every deck in it a separate new Markdown file will be created. You can then save it anywhere you want.

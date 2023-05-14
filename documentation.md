@@ -48,15 +48,16 @@ A webview will appear show you the first page of the first card to review. You t
 
 * `Space` - expands the card and shows one more page (repeat until the card is fully expanded)
 * `Enter` - mark the card as remembered
+* `S` - mark the card as hard (Struggled)
 * `F` - mark the card as forgotten
 * `N` - go to the next card without logging any result
-* `A` - archive card - card won’t show for review anymore
+* `A` - archive card - card won't show for review anymore, this needs to be confirmed by `Enter`
 
 ### Recall level <a href="#recall-level" id="recall-level"></a>
 
 Every card has a so called “recall level” which indicates how well you remember it. It also represents the number of days after which it will be queued for review again.
 
-All cards start with a default recall level of 1 which means the card will be queued for review the next day. If you mark it as remembered, the recall level will be doubled. If you mark it as forgotten, the recall level will be halved.
+All cards start with a default recall level of 1 which means the card will be queued for review the next day. If you mark it as remembered, the recall level will be doubled. the recall level will be doubled. If you mark it as forgotten, the recall level will go back to 1.
 
 More details on the algorithm can be find [here](spaced-repetition.md)
 
